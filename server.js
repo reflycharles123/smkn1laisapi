@@ -21,17 +21,17 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://smkn1lais-uk16.vercel.app"],
-    methods: ["GET"],
+    origin: ["https://smkn1laisfrontend-b25kzg52p-reflys-projects.vercel.app"],
+    methods: ["POST", "GET"],
     credentials: true,
   })
 );
 //ROMBONGAN ROUTES NYA
+// routes siswa
+app.use("/api/siswa", siswaRoutes);
 app.get("/", (req, res) => {
   res.send("Api Berjalan");
 });
-// routes siswa
-app.use("/api/siswa", siswaRoutes);
 
 const PORT = process.env.PORT || 5000;
 
