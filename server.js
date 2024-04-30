@@ -4,8 +4,6 @@ import morgan from "morgan";
 import dotenv from "dotenv";
 import path from "path";
 import cors from "cors";
-//import middleware
-import {notFound, errorHandler} from "./middleware/errorMiddleware.js";
 //import routes
 import siswaRoutes from "./routes/siswaRoutes.js";
 
