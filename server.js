@@ -36,6 +36,6 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT 
 
 app.listen(
-  PORT,
+  9976,
   console.log(`Dalam Mode ${process.env.NODE_ENV} Di Port ${PORT}`)
 );
