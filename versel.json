@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "name": "smkn1lais",
+  "builds": [
+    {
+      "src": "*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/"
+    }
+  ]
+}
