@@ -33,7 +33,7 @@ app.get("/", (req, res) => {
   res.send("Api Berjalan");
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT 
 
 app.listen(
   PORT,
